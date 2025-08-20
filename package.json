@@ -1,0 +1,41 @@
+{
+  "name": "authcomponent",
+  "version": "1.0.0",
+  "description": "This is a practice for future development",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/server.js",
+    "client": "cd client && yarn install && yarn run build && yarn start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevngn6695/AuthComponent.git"
+  },
+  "author": "Hiep Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevngn6695/AuthComponent/issues"
+  },
+  "homepage": "https://github.com/kevngn6695/AuthComponent#readme",
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "axios": "^1.11.0",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sass": "^1.90.0",
+    "uuid": "^11.1.0"
+  }
+}

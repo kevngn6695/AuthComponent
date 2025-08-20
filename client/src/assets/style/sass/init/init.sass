@@ -1,0 +1,43 @@
+@import "../fonts/fonts.sass"
+
+$dark-color: #000000
+$light-color: #ffffff
+
+$grey-color: #ccc
+$red-color: #ff0000
+$green-color: #00ff00
+$blue-color: #0000ff
+$yellow-color: #ffff00
+
+$mobile-width: 768px
+$desktop-width: 1024px
+$large-width: 1200px
+$extra-large-width: 1440px
+
+$poppins-font: "Custom_Poppins", sans-serif
+
+%message-shared
+    font-size: 1.5rem
+    font-weight: 500
+    color: $dark-color
+
+%poppins-font
+    font-family: $poppins-font
+    font-weight: 500
+    color: $dark-color
+
+%grey-border
+    border: 1px solid $grey-color
+
+%glassmorphism
+    background: rgba( 254, 254, 254, 0.05 )
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+    backdrop-filter: blur( 7.5px )
+    -webkit-backdrop-filter: blur( 7.5px )
+    border-radius: 10px
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+
+%neumorphism
+    background: $light-color
+    box-shadow: 0 8px 16px rgba( 0, 0, 0, 0.2 ), inset 0 -4px 8px rgba( 255, 255, 255, 0.1 )
+    border-radius: 10px
